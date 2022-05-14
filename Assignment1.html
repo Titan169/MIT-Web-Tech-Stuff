@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Registraion form</title>
+    <style>
+        .left{
+            padding-left: 30px;
+            text-align: center;
+            font-weight: bold;
+            width: 50%;
+            background: linear-gradient(purple,red);
+             
+        }
+        
+        .c{
+            width: 30px;
+        }
+        .right{
+            text-align: center;
+            font-weight: bold;
+            width: 70%;
+            margin-top: 30px;
+            background: linear-gradient(purple,red);
+
+        }
+        .a::after{
+            content: "*";
+            color: rgb(221, 13, 13);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="left" style="width:25%;text-align:center;padding:7px;float:left;">
+        <H2>Company Registration Form</H2>
+        <P>------------------------------------------------------</P>
+        <label class="a" for="bname">Bussines Name: </label>
+        <input type="text" id="bname"><br><br>
+        <label class="a" for="code">Phone: </label><br>
+        <input class="c" type="number" name="phone" id="phone">
+        <input type="number" name="phone" id="phone">
+        <pre style="margin: 0cm;">Area Code    Phone Number</pre><br>
+        <label class="a" for="ABN">A.B.N.  </label>  <input type="text" name="abn" id="abn"><br><br>
+        <label class="a" for="mail">E-Mail: </label><input type="email" name="mail" id="mail"><br><br>
+        <label class="a" for="website">Website: </label><input type="url" name="website" id="website"><br><br>
+        <label class="a" for="Saddr">Shipping Address: </label><br><br>
+        <input style="margin-left: 20px;" type="text" name="Saddr" id="Saddr">
+        <pre style="margin: 0cm; margin-left: 20px;">Street Address </pre><br>
+        <input style="margin-left: 20px;" type="text" name="Saddr" id="Saddr">
+        <pre style="margin: 0cm; margin-left: 20px;">Street Address Line 2 </pre>
+        <input style="margin-left: 20px; width: 70px;" type="text" name="Aaddr" id="Saddr">
+        <input style="margin-left: 20px; width: 70px;" type="text" name="Saddr" id="Saddr">
+        <pre style="margin: 0cm; margin-left: 20px;">     City          State/Province </pre>
+        <input style="margin-left: 20px; width: 70px;" type="number" name="Aaddr" id="Saddr">
+        <select class="a" style="margin-left: 20px; width: 70px;" name="Saddr" id="Saddr">
+           <option value="USA">USA</option>
+           <option value="UK">UK</option>
+           <option value="India">India</option>
+           <option value="China">Chaina</option>
+           <option value="Russia">Russia</option>
+        </select>
+        <pre style="margin: 0cm; margin-left: 20px;">Postal/Zip    Country</pre><br><br>
+
+        <label class="a" for="trade">Trading Since: </label><br>
+        <input style="margin-left: 20px;" type="date" name="trade" id="trade"><br>
+    
+        <label class="a" style="margin-left: 30px;" for="business">Type of Business:</label><br>
+        <input style="margin-left: 200px;" type="checkbox" name="internet" id="internet">Internet <br>
+        <input style="margin-left: 200px;" type="checkbox" name="bricksandmortar" id="bricksandmortar">Bricks And Mortar <br>
+        <input style="margin-left: 200px;" type="checkbox" name="Wholesale" id="Wholesale">Wholesale <br>
+
+    </div>
+
+    <div class="right" style="text-align:center;padding:7px;float:left;">
+        <label class="a" for="pay">Select Payment Method</label><br>
+        <input type="checkbox" id="pay">PayPal <br>
+        <input type="checkbox" id="pay">Cheque <br>
+        <input type="checkbox" id="pay">Bank Transfer <br>
+        <input type="checkbox" id="pay">Money Order <br>
+        <input type="checkbox" id="pay">Visa/Master Card <br>
+
+        <p>-----------------------------------------------------------------</p>
+        <h2>Business Representative Information</h2>
+
+        <label class="a" for="BRname">Name: </label>
+        <input style="width: 100px;" type="text" name="BRname" id="BRname">
+        <input style="width: 100px;" type="text">
+        <pre style="margin-top: 0%;">     First Name        Last Name</pre><br>
+
+        <label class="a" for="Saddr">Address: </label><br>
+        <input style="margin-left: 20px;" type="text" name="Saddr" id="Saddr">
+        <pre style="margin: 0cm; margin-left: 20px;">Street Address </pre><br>
+        <input style="margin-left: 20px;" type="text" name="Saddr" id="Saddr">
+        <pre style="margin: 0cm; margin-left: 20px;">Street Address Line 2 </pre>
+        <input style="margin-left: 20px; width: 70px;" type="text" name="Aaddr" id="Saddr">
+        <input style="margin-left: 20px; width: 70px;" type="text" name="Saddr" id="Saddr">
+        <pre style="margin: 0cm; margin-left: 20px;">     City      State/Province </pre>
+        <input style="margin-left: 20px; width: 70px;" type="number" name="Aaddr" id="Saddr">
+        <select class="a" style="margin-left: 20px; width: 70px;" name="Saddr" id="Saddr">
+           <option value="USA">USA</option>
+           <option value="UK">UK</option>
+           <option value="India">India</option>
+           <option value="China">Chaina</option>
+           <option value="Russia">Russia</option>
+        </select>
+        <pre style="margin: 0cm; margin-left: 20px;">Postal/Zip    Country</pre><br><br>
+
+
+        <label class="a" for="code">Phone: </label><br>
+        <input class="c" type="number" name="phone" id="phone">
+        <input type="number" name="phone" id="phone">
+        <pre style="margin: 0cm;">Area Code      Phone Number</pre><br>
+
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea><br><br>
+
+        <button onclick="alert('Submitted Succesfully')">Submit</button>
+        
+    </div>
+
+
+</body>
+
+</html>

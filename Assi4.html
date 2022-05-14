@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form3</title>
+    <script lang="javascript" type="text/javascript">
+        var a=10,b=20,
+            sum=a+b;
+        document.write("The sum is "+sum)
+
+        document.write("Hello World!")
+             
+        
+    </script>
+    <style>
+        .p{
+            align-items: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(255, 174, 0);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        #j{
+            background-color: aqua;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: larger;
+            padding: auto;
+        }
+        #a{
+            background-color: blue;
+            font-size: larger;
+        }
+        #p{
+            background-color: brown;
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
+    
+</head>
+<body bgcolor="aqua">
+  
+
+    <p id="p" align="center" >Contact form</p>
+    <h5 id="j" align="center">Please Fill the information so that we can contact you</h5>
+    <form action="form">
+        <table class="p"  align="center" border="5px">
+            <tr>
+                <th>Name</th>
+                <th><input type="text" id="name"></th>
+            </tr>
+
+            <tr>
+                <th>Mail</th>
+                <th><input type="mail" name="mail" id="mail"></th>
+                
+            </tr>
+            <tr>
+                <th>Phone NO.</th>
+                <th><input type="number" name="number" id="number"></th>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <th><input type="radio" name="gender" id="male">Male
+                    <input type="radio" name="gender" id="female">Female</th>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <th><input type="date" name="date" id="date"></th>
+            </tr>
+            <tr>
+                <th>Comments</th>
+                <th><textarea name="comment" id="comment" cols="20" rows="5"></textarea></th>
+            </tr>
+            <tr>
+                <th>Select Branch</th>
+                <th><select name="branch" id="branch">
+                    <option value="Computer">Computer</option>
+                    <option value="Civil">Civil</option>
+                    <option value="E&Tc">E&Tc</option>
+                    <option value="Aerospace">Aerospace</option>
+                </select></th>
+            </tr>
+            <tr id="a">
+                <th colspan="2"><button name="submit">Submit</button>
+                    <button name="reset">Reset</button>
+                </th>
+            </tr>
+        </table>
+
+
+    </form>
+
+    
+    
+</body>
+</html>

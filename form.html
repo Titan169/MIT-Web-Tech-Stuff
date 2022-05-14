@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WT Forms</title>
+</head>
+<body class="p">
+    <style>
+        .p{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            background-color: aqua;
+        }
+        .a{
+            
+        }
+    </style>
+
+    <h2>Fill the Form</h2>
+    <form>
+        <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="rollno">Roll No.:</label>
+        <input type="number" name="rollno" id="rollno"><br><br>
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address"><br><br>
+        <label for="emailid">Email:</label>
+        <input type="email" name="emailid" id="emailid"><br><br>
+        <label for="gender">Gender:  </label>
+        <label for="gender">Male</label><input type="radio" name="gender" id="gender" value="male">
+        <label for="gender">Female</label><input type="radio" name="gender" id="gender" value="female"><br><br>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date"><br><br>
+        <label for="transportation">Choose Transport:</label><br>
+        <input type="checkbox" name="vehical1" id="car">
+        <label for="transportaion">Car</label><br>
+        <input type="checkbox" name="vehical2" id="bike">
+        <label for="transportaion">Bike</label><br>
+        <input type="checkbox" name="vehical3" id="bus">
+        <label for="transportation">Bus</label>
+        <br><br>
+
+        <label for="submit"></label>
+        <input type="submit" name="submit" id="submit">
+        <label for="reset"></label>
+        <input type="reset"><br><br>
+        <input style="color: rgb(251, 255, 0); background-color: brown;" type="button" onclick="alert('Hello!')" value="Click Here!" >
+        </div>
+    </form>
+    
+</body>
+</html>

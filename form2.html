@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admisssion Enquiry Form</title>
+    <style>
+        .body{
+            background: linear-gradient(red,aqua);
+        }
+    </style>
+</head>
+<body align="center" class="body">
+    <h2>Admisssion Enquiry Form</h2>
+   
+
+    <form action="form">
+
+        <table align="center" border="5px" style="background-color: rgb(0, 217, 255);">
+            <tr>
+                <th>Name</th>
+                <th><input type="text" name="name" id="name" ></th>
+    
+            </tr>
+            <tr>
+                <th>Address</th>
+                <th><input type="text" name="address" id="address" value="Pune" readonly></th>
+            </tr>
+            <tr>
+                <th>E-mail</th>
+                <th><input type="mail" name="mail" id="mail"></th>
+            </tr>
+            <tr>
+                <th>Mobile number</th>
+                <th><input type="number" name="mobile" id="mobile"></th>
+            </tr>
+            <tr>
+                <th>DOB</th>
+                <th><input type="date" name="dob" id="dob"></th>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <th><input type="radio" name="gender" value="male">Male
+                     <input type="radio" name="gender" id="female">Female
+                     <input type="radio" name="gender" id="other">Other</th>
+            </tr>
+            <tr>
+                <th>Hobbies</th>
+                <th align="left">
+                    <input type="checkbox" name="Hobbies" id="Programming">Programming<br>
+                    <input type="checkbox" name="Hobbies" id="Construction">Construction <br>
+                    <input type="checkbox" name="Hobbies" id="Designing">Designing</th>
+            </tr>
+            <tr>
+                <th>Select Branch</th>
+                <th><select name="branch" id="branch">
+                    <option value="Computer">Computer</option>
+                    <option value="Civil">Civil</option>
+                    <option value="E&Tc">E&Tc</option>
+                    <option value="Aerospace">Aerospace</option>
+                </select></th>
+            </tr>
+            <tr>
+                <th>Rate This Site</th>
+                <th><input type="number" name="rate" id="rate"></th>
+            </tr>
+            <tr>
+                <th>Comments</th>
+                <th><textarea name="comment" id="comment" cols="23" rows="3" placeholder="Give your comments here"></textarea></th>
+            </tr>
+            <tr>
+                <th colspan="2" >
+                    <label for="submit"></label>
+                    <input type="submit" name="submit" id="submit" onclick="alert('Submitted Successfully')">
+                    <label for="reset"></label>
+                    <input type="reset" name="reset" id="reset"><br><br>
+                </th>
+                    
+            </tr>
+        </table>
+
+    </form>
+    
+</body>
+</html>

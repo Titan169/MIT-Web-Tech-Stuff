@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color</title>
+    <script lang="javascript" type="text/javascript">
+
+        var colors = ['#0000ff','#ffe600','#ff0000','#ffe600']
+        var index=0
+        function cng_color(colors)
+        {
+            // document.body.style.backgroundColor = '#0000ff';
+            // document.body.style.backgroundColor = '#ffe600';
+            // document.body.style.backgroundColor = '#ff0000';
+            // document.body.style.backgroundColor = '#ffe600';
+
+            
+            var colors = ['##0051ff','#ff0000','#8a2be2','#17c001']
+            document.body.style.backgroundColor=colors[index]
+            if(index==colors.length)
+            index=0
+            
+        }
+       
+
+    </script>
+
+    <style>
+        #p{
+            /* color: #0051ff; */
+            text-align: center;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body id="p">
+    <p>Assignment : Change Background Color onClick</p>
+
+    <button onclick="cng_color()">Change Color</button>
+    <input type="button" onclick="cng_color()" value="co">
+     
+    
+</body>
+</html>

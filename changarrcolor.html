@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript" type="text/javascript">
+        let index=0
+
+        function chcolor() {
+            var color=['blue','green','black','red','yellow'];
+            document.body.style.background = color[index]
+            index+=1
+            if(index==color.length)
+            index=0
+
+        }
+    </script>
+</head>
+<body>
+    <p>Click to change background color</p><br><br>
+    <button onclick="chcolor()">Click</button>
+
+</body>
+</html>

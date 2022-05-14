@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript" type="text/javascript">
+
+        var n1,n2
+        var result
+        function add(n1,n2) 
+        {
+            var num1=parseFloat(document.getElementById('n1').value)          
+            var num2=parseFloat(document.getElementById('n2').value)
+            var add=num1+num2
+            document.getElementById('res').value=add
+        }
+
+        function sub(n1,n2) 
+        {
+            var num1=parseFloat(document.getElementById('n1').value)          
+            var num2=parseFloat(document.getElementById('n2').value)
+            var sub=num1-num2
+            document.getElementById('res').value=sub
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="n1"><br>
+    <input type="number"  id="n2"><br><br>
+
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Add</button>
+
+    <input type="number" name="" id="res">
+    
+</body>
+</html>

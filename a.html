@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change color</title>
+    <style>
+
+        .body{
+            text-align: center;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            align-items: center;
+        }
+
+        #div1{
+        padding-top: 50px;
+        text-align: center;
+
+        }
+        #div_tag{
+            text-align: center;
+            height: 300px;
+            width: 600px;
+            padding-top: 30px;
+            margin: 80px auto;
+        }
+    
+    
+    </style>
+</head>
+<body class="body">
+    <div id="div1">
+        <p>Click to change color</p>
+        <button onclick="document.body.style.backgroundColor='yellow';">Yellow</button>
+        <button onclick="document.body.style.backgroundColor='red';">Red</button>
+        <button onclick="document.body.style.backgroundColor='green';">Green</button>
+        <button onclick="document.body.style.backgroundColor='blue';">Blue</button>
+        <button onclick="document.body.style.backgroundColor='black';">Black</button>
+    </div>
+    
+
+    <div id="div_tag" >
+        <p>Change color of This Div tag</p>
+        <button onclick="document.getElementById('div_tag').style.backgroundColor='red';">Red</button>
+        <button onclick="document.getElementById('div_tag').style.backgroundColor='cyan';">Cyan</button>
+        <button onclick="document.getElementById('div_tag').style.backgroundColor='purple';">Purple</button>
+        <button onclick="document.getElementById('div_tag').style.backgroundColor='grey';">Grey</button>
+
+
+    </div>
+
+
+
+    
+</body>
+</html>

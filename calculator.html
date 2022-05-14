@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script lang="javascript" type="text/javascript">
+        
+        var n1,n2
+        function add()
+        {
+            var num1=parseInt(document.getElementById("n1").value)
+            var num2=parseInt(document.getElementById("n2").value)
+            var sum=num1+num2
+            document.getElementById("res").value=sum;
+
+        }
+        function sub(){
+            var num1=parseInt(document.getElementById("n1").value)
+            var num2=parseInt(document.getElementById("n2").value)
+            var subtract=num1-num2
+            document.getElementById("res").value=subtract;
+
+        }
+        function mul(n1,n2){
+            var num1=parseInt(document.getElementById("n1").value)
+            var num2=parseInt(document.getElementById("n2").value)
+            var multiply=num1*num2
+            document.getElementById("res").value=multiply;
+        }
+        function div(n1,n2){
+            var num1=parseInt(document.getElementById("n1").value)
+            var num2=parseInt(document.getElementById("n2").value)
+            var divide=num1/num2
+            document.getElementById("res").value=divide;
+        }
+        
+    </script>
+
+    <style>
+        .p{
+            text-align: center;
+            padding: 100px 300px;
+            background-image: linear-gradient(red,aqua);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            width: 330px;
+            margin: 10px 200px;
+        
+        }
+        #b{
+            background-color: aqua;
+            padding-top: 20px;
+            border: 5px rgb(20, 34, 161) solid;
+            border-radius: 10em;
+        
+        }
+        #a{
+            background-color: red;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            border: 5px rgb(23, 36, 223) solid;
+            border-radius: 10cm;
+
+        }
+    </style>
+</head>
+<body class="p">
+    <label for="n1">Enter First number: </label>
+    <input type="number" name="first" id="n1"><br><br>
+    <label for="n2">Enter Second number: </label>
+    <input type="number" name="second" id="n2"><br><br>
+
+    <div id="b">
+        <button onclick="add()">Addition</button>
+        <button onclick="sub()">Subtraction</button>
+        <button onclick="mul()">Multiplication</button>                                                                                    
+        <button onclick="div()">Division</button><br><br>
+    </div><br>
+    <div id="a">
+        <label for="result">Result:</label>
+        <input type="number" name="res" id="res">
+        
+    </div>
+    
+    
+    
+    
+</body>
+</html>
